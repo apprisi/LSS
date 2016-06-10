@@ -42,10 +42,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/montura/Git/LSS/C++
+CMAKE_SOURCE_DIR = "/home/montura/ClionProjects/Minutiae Detection"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/montura/Git/LSS/C++
+CMAKE_BINARY_DIR = "/home/montura/ClionProjects/Minutiae Detection"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -72,9 +72,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/montura/Git/LSS/C++/CMakeFiles /home/montura/Git/LSS/C++/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/montura/ClionProjects/Minutiae Detection/CMakeFiles" "/home/montura/ClionProjects/Minutiae Detection/CMakeFiles/progress.marks"
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/montura/Git/LSS/C++/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/montura/ClionProjects/Minutiae Detection/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -114,29 +114,29 @@ Minutiae_Detection/fast:
 	$(MAKE) -f CMakeFiles/Minutiae_Detection.dir/build.make CMakeFiles/Minutiae_Detection.dir/build
 .PHONY : Minutiae_Detection/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+Minutia_Detection.o: Minutia_Detection.cpp.o
+.PHONY : Minutia_Detection.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/Minutiae_Detection.dir/build.make CMakeFiles/Minutiae_Detection.dir/main.cpp.o
-.PHONY : main.cpp.o
+Minutia_Detection.cpp.o:
+	$(MAKE) -f CMakeFiles/Minutiae_Detection.dir/build.make CMakeFiles/Minutiae_Detection.dir/Minutia_Detection.cpp.o
+.PHONY : Minutia_Detection.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+Minutia_Detection.i: Minutia_Detection.cpp.i
+.PHONY : Minutia_Detection.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/Minutiae_Detection.dir/build.make CMakeFiles/Minutiae_Detection.dir/main.cpp.i
-.PHONY : main.cpp.i
+Minutia_Detection.cpp.i:
+	$(MAKE) -f CMakeFiles/Minutiae_Detection.dir/build.make CMakeFiles/Minutiae_Detection.dir/Minutia_Detection.cpp.i
+.PHONY : Minutia_Detection.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+Minutia_Detection.s: Minutia_Detection.cpp.s
+.PHONY : Minutia_Detection.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/Minutiae_Detection.dir/build.make CMakeFiles/Minutiae_Detection.dir/main.cpp.s
-.PHONY : main.cpp.s
+Minutia_Detection.cpp.s:
+	$(MAKE) -f CMakeFiles/Minutiae_Detection.dir/build.make CMakeFiles/Minutiae_Detection.dir/Minutia_Detection.cpp.s
+.PHONY : Minutia_Detection.cpp.s
 
 # Help Target
 help:
@@ -147,9 +147,9 @@ help:
 	@echo "... Minutiae_Detection"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... Minutia_Detection.o"
+	@echo "... Minutia_Detection.i"
+	@echo "... Minutia_Detection.s"
 .PHONY : help
 
 
